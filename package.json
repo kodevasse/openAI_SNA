@@ -2,7 +2,7 @@
   "name": "nodejs-openapi-image",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "16.17.1"
   },
   "description": "Generate images using OpenAI",
   "main": "index.js",
