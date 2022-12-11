@@ -6,13 +6,11 @@
     "npm": "8.15"
   },
   "description": "Generate images using OpenAI",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index",
-    "postinstall": "npm run build",
-    "build": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "PDP",
