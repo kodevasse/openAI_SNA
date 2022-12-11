@@ -9,8 +9,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index",
-    "postinstall": "npm run build"
+    "dev": "nodemon index"
   },
   "keywords": [],
   "author": "PDP",
