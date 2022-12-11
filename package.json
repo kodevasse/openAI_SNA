@@ -8,7 +8,6 @@
   "description": "Generate images using OpenAI1",
   "main": "server.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
     "start": "node index.js",
     "dev": "nodemon index",
     "postinstall": "npm run build"
