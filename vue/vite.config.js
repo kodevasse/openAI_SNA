@@ -18,9 +18,9 @@ export default defineConfig({
     },
   },
   resolve: {
-    build: {
-      outDir: "./dist",
-    },
+    // build: {
+    //   outDir: "./dist",
+    // },
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
