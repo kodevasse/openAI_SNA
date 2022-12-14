@@ -7,16 +7,13 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   server: {
+    port: 5173,
     proxy: {
-      "/openai/ ": {
-        target: "http://localhost:5000 ",
-        changeOrigin: true,
-        secure: false,
-
-        rewrite: (path) => path.replace("/openai/", ""),
-      },
+      // string shorthand: http://localhost:5173/foo -> http://localhost:4567/foo
+      "/openai": "http://localhost:5000",
     },
   },
+
   resolve: {
     // build: {
     //   outDir: "./dist",

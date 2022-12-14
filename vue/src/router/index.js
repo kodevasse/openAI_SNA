@@ -2,14 +2,15 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ViewEscape01 from "../views/ViewEscape01.vue";
 import TextView from "../views/TextView.vue";
+import NewAiView from "../views/NewAiView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HomeView,
+      name: "NewAiView",
+      component: NewAiView,
     },
     {
       path: "/escape",
@@ -21,6 +22,7 @@ const router = createRouter({
       name: "tekst",
       component: TextView,
     },
+
     {
       path: "/about",
       name: "about",
