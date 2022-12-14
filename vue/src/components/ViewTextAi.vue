@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-3xl mx-auto">
     <div
-      class="rounded-xl w-full h-52 sm:mt-3 mt-1 bg-gradient-to-r p-[0.1rem] from-teal-500 via-orange-300 to-fuchsia-400"
+      class="rounded-xl w-full sm:mt-3 mt-1 bg-gradient-to-r p-[0.1rem] from-teal-500 via-orange-300 to-fuchsia-400"
     >
       <div class="bg-gray-800 text-white rounded-lg">
         <section class="p-3 sm:p-5">
@@ -38,7 +38,7 @@
         class="image mx-auto transition-all duration-700 flex justify-center"
       >
         <div
-          class="absolute radial-progress spinner text-pink-400 my-6 animate-spin invisible"
+          class="mt-10 absolute radial-progress spinner text-pink-400 my-6 animate-spin invisible"
           style="--value: 50; --size: 12rem; --thickness: 4px"
         ></div>
         <div class="image-container">
