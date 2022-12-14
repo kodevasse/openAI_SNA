@@ -6,24 +6,24 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 // allow cors localhost
-// const allowedOrigins = ["https://localhost:5000"];
+// const allowedOrigins = ["http://127.0.0.1/:5000"];
 // // Enable body parser
 // app.use(
 //   cors({
-//     origin: function (origin, callback) {
-//       // allow requests with no origin
-//       // (like mobile apps or curl requests)
-//       if (!origin) return callback(null, true);
-//       if (allowedOrigins.indexOf(origin) === -1) {
+//     origin: (origin, callback) => {
+//       if (allowedOrigins.indexOf(origin) !== -1) {
+//         return callback(null, true);
+//       } else {
 //         var msg =
 //           "The CORS policy for this site does not " +
 //           "allow access from the specified Origin.";
 //         return callback(new Error(msg), false);
 //       }
-//       return callback(null, true);
 //     },
 //   })
 // );
+app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
